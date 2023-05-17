@@ -1,0 +1,11 @@
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #282c34;
+}
+
+#left-index {
+    float: left;
+    width: 500px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
