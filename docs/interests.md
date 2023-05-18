@@ -1,4 +1,10 @@
-# Interests
+---
+title: Interests
+---
+
+<div markdown="span">
+<h1 id="header">Interests</h1>
+</div>
 
 ## Technology
 
