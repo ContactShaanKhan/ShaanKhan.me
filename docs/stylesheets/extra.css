@@ -6,13 +6,13 @@
 
 /* Light mode */
 [data-md-color-scheme="default"]{
+    --md-primary-fg-color: #282c34;
     --md-default-bg-color: #ffffff;
-    --md-default-tab-color: #151b24;
+    --md-default-tab-color: #98c379;
 }
 
 #left-index {
     float: left;
-    width: 500px;
     padding-right: 30px;
     padding-bottom: 30px;
 }
@@ -21,4 +21,20 @@
     border-width: 10px 0px 0px 0px;
     border-style: solid;
     border-color: var(--md-default-tab-color);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
