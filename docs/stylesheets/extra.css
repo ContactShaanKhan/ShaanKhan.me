@@ -1,16 +1,19 @@
 /* Dark mode */
 [data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #151b24;
     --md-default-bg-color: #282c34;
     --md-default-tab-color: #98c379;
     --md-default-header-color: #ffffff;
+    --md-default-tab-underline-color: #e63946;
 }
 
 /* Light mode */
 [data-md-color-scheme="default"]{
-    --md-primary-fg-color: #282c34;
+    --md-primary-fg-color: #151b24;
     --md-default-bg-color: #ffffff;
     --md-default-tab-color: #98c379;
     --md-default-header-color: #274e13;
+    --md-default-tab-underline-color: #e63946;
 }
 
 #header {
@@ -31,9 +34,9 @@
 }
 
 .md-tabs__link--active {
-    border-bottom-color: #e63946;
+    border-bottom-color: var(--md-default-tab-underline-color);
     border-bottom-style: solid;
-    border-bottom-width: 5px;
+    border-bottom-width: 4px;
 }
 
 .row {

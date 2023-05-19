@@ -20,8 +20,6 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-      primary: white
-      accent: amber
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -29,8 +27,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-      primary: #282c34
-      accent: amber
 
 repo_url: https://github.com/ContactShaanKhan/ShaanKhan.me
 
