@@ -1,0 +1,75 @@
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #151b24;
+    --md-default-bg-color: #282c34;
+    --md-default-tab-color: #98c379;
+    --md-default-header-color: #ffffff;
+    --md-default-tab-underline-color: #e63946;
+}
+
+/* Light mode */
+[data-md-color-scheme="default"]{
+    --md-primary-fg-color: #151b24;
+    --md-default-bg-color: #ffffff;
+    --md-default-tab-color: #98c379;
+    --md-default-header-color: #274e13;
+    --md-default-tab-underline-color: #e63946;
+}
+
+#header {
+    color: var(--md-default-header-color);
+    font-weight: 400;
+}
+
+#left-index {
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.md-main {
+    border-width: 10px 0px 0px 0px;
+    border-style: solid;
+    border-color: var(--md-default-tab-color);
+}
+
+.md-tabs__link--active {
+    border-bottom-color: var(--md-default-tab-underline-color);
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
