@@ -10,7 +10,7 @@ hide:
 
 <div markdown>
 <div markdown="span" id="left-index">
-    ![Loading me.jpeg...](assets/images/me.jpeg){ width="500" }
+    ![Loading me.jpeg...](assets/images/me.JPG){ width="500" }
 </div>
 <div markdown>
 Thank you for visiting my site!
