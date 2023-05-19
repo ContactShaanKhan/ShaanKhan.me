@@ -10,8 +10,8 @@ hide:
 
 <div markdown="span" class="row">
 <div markdown class="column">
-<img src="assets/shadow/shadow1.JPG"/>
-<img src="assets/shadow/shadow2.JPG"/>
+<img src="assets/shadow/shadow1.jpg"/>
+<img src="/assets/shadow/shadow2.jpg"/>
 <img src="assets/shadow/shadow3.JPG"/>
 <img src="assets/shadow/shadow4.JPG"/>
 <img src="assets/shadow/shadow5.JPG"/>
