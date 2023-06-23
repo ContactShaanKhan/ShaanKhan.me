@@ -5,6 +5,7 @@
     --md-default-tab-color: #98c379;
     --md-default-header-color: #ffffff;
     --md-default-tab-underline-color: #e63946;
+    --md-default-contact-form-background: #151b24;
 }
 
 /* Light mode */
@@ -14,6 +15,7 @@
     --md-default-tab-color: #98c379;
     --md-default-header-color: #274e13;
     --md-default-tab-underline-color: #e63946;
+    --md-default-contact-form-background: #282c34;
 }
 
 #header {
@@ -37,6 +39,11 @@
     border-bottom-color: var(--md-default-tab-underline-color);
     border-bottom-style: solid;
     border-bottom-width: 4px;
+}
+
+/* Offset the additional bottom color border that I added to .md-main */
+.md-search__input {
+    bottom: 10px;
 }
 
 .row {
@@ -73,3 +80,112 @@
         max-width: 100%;
     }
 }
+
+#contactMe-Container {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Responsive layout - makes contact form smaller for tablet */
+@media screen and (min-width: 850px) {
+    #contactMe-Container {
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive layout - makes contact form smaller for desktop */
+@media screen and (min-width: 1800px) {
+    #contactMe-Container {
+        height: auto;
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+.form-buffer {
+    height: 20px;
+}
+
+#contactMe-Container-Form {
+    width: 100%;
+    left: 0px;
+    float: left;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#contactMe-Container-Form-Inner {
+    width: 90%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #151b24;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-color: #98c379;
+    border-width: 3px;
+    border-style: solid;
+}
+
+#message-text,
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1.5px solid #98c379;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#message-text {
+    height: 200px;
+}
+
+input[type=submit] {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #98c379;
+    color: black;
+    font-weight: bolder;
+    font-size: medium;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #bef199;
+}
+
+#form-email-input,
+#form-name-input {
+    color: black;
+}
+
+#form-name-label,
+#form-email-label,
+#form-message-label {
+    color: white;
+    margin: 5px;
+}
+
+/* Adjust the placeholder color */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(151, 151, 151);
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(151, 151, 151);
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(151, 151, 151);
+  }
