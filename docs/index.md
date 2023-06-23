@@ -60,4 +60,10 @@ I had the pleasure to be the class of 2019 Walt Whitman High School salutatorian
 
 This website has gone through a few different iterations.  The first being a [google site](https://www.old.shaankhan.me), the next being a site with [react](https://react.shaankhan.me), and finally with the current iterations being built with Mkdocs.  Why do I change it so often? I just like to try new things :)
 
+--------
 
+## Contact me!
+
+The contact me form is a work in progress as making it work is a bit hacky :)
+
+<div markdown="span" id="findme"></div>
