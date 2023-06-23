@@ -21,7 +21,7 @@ function load_component(html, div)
 
 // Load the contact form
 const find_me_div = document.getElementById('findme')
-const contact_form = '../components/contactform.html';
+const contact_form = '../../components/contactform.html';
 load_component(contact_form, find_me_div)
 
 // TODO: Handle the submit button for the contact form
