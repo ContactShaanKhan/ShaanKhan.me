@@ -1,4 +1,6 @@
 #! /usr/bin/bash
 
-source .venv/bin/activate
+# Run with script with source
+
+conda activate shaankhan.me
 mkdocs serve

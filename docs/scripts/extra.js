@@ -1,6 +1,6 @@
 // Takes an html file, loads it and attaches it to the specified div.
 //  Yes, it is a bit hacky, but it works :)
-function load_component(html, div)
+function load_component(html, div, callback)
 {
     if (div === null)
         return
@@ -11,6 +11,10 @@ function load_component(html, div)
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
         {
             div.innerHTML = xmlHttp.responseText;
+
+            // Execute code after the component has been mounted
+            //  Useful for mounting event listeners
+            callback()
         }
     };
 
@@ -22,6 +26,21 @@ function load_component(html, div)
 // Load the contact form
 const find_me_div = document.getElementById('findme')
 const contact_form = '../../components/contactform.html';
-load_component(contact_form, find_me_div)
+load_component(contact_form, find_me_div, () => {
+    const contact_form_submit_button = document.getElementById('submit-form-button')
 
-// TODO: Handle the submit button for the contact form
+    contact_form_submit_button.addEventListener("click", (event) => {
+        console.log('Submit!')
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
