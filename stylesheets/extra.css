@@ -6,6 +6,7 @@
     --md-default-header-color: #ffffff;
     --md-default-tab-underline-color: #e63946;
     --md-default-contact-form-background: #151b24;
+    --md-default-input-text-color: #000000;
 }
 
 /* Light mode */
@@ -16,6 +17,7 @@
     --md-default-header-color: #274e13;
     --md-default-tab-underline-color: #e63946;
     --md-default-contact-form-background: #282c34;
+    --md-default-input-text-color: #ffffff;
 }
 
 #header {
@@ -165,7 +167,7 @@ input[type=submit]:hover {
 
 #form-email-input,
 #form-name-input {
-    color: black;
+    color: var(--md-default-input-text-color);
 }
 
 #form-name-label,
@@ -182,10 +184,10 @@ input[type=submit]:hover {
     opacity: 1; /* Firefox */
   }
 
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgb(151, 151, 151);
-  }
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: rgb(151, 151, 151);
+}
 
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: rgb(151, 151, 151);
-  }
+::-ms-input-placeholder { /* Microsoft Edge */
+color: rgb(151, 151, 151);
+}
