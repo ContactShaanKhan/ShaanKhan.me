@@ -6,7 +6,7 @@
     --md-default-header-color: #ffffff;
     --md-default-tab-underline-color: #e63946;
     --md-default-contact-form-background: #151b24;
-    --md-default-input-text-color: #000000;
+    --md-default-input-text-color: #ffffff;
 }
 
 /* Light mode */
@@ -17,7 +17,7 @@
     --md-default-header-color: #274e13;
     --md-default-tab-underline-color: #e63946;
     --md-default-contact-form-background: #282c34;
-    --md-default-input-text-color: #ffffff;
+    --md-default-input-text-color: #000000;
 }
 
 #header {
